@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:5432/postgres
+    username: postgres.jxhpbzvebzywsbbeehai
+    password: JDgti5_us$dW68.
+
+    # The fully-qualified class name of the PostgreSQL JDBC driver
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # Controls how Hibernate handles schema generation:
+      # - `create`: Drops and recreates the schema at each app startup.
+      ddl-auto: create
+
+    # Enables logging of generated SQL queries to the console
+    show-sql: true
+
+    properties:
+      hibernate:
+        # Formats SQL queries to be more readable in the logs
+        format_sql: true
+
+    # Explicitly tells Spring JPA that you're using PostgreSQL
+    database: postgresql
+
+    # Sets the Hibernate dialect for PostgreSQL to generate proper SQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+hospital-adresse:  "Centre Ville"
