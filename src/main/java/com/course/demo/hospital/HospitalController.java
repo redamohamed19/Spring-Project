@@ -20,7 +20,7 @@ public class HospitalController {
 	
 	
 
-
+	// Test commit
 	@GetMapping("/hospitals")
     private List<Hospital> getHospitals() {
         return hospitalService.getHospitals();
