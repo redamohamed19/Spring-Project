@@ -12,6 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "Clinic")
@@ -22,6 +23,7 @@ public class Hospital {
 	@GeneratedValue
 	private Integer id;
 	
+	@NotEmpty(message = "hospital shouldint be empty")
 	private String name;
 	
 	private String adresse;
